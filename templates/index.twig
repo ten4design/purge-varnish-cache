@@ -1,0 +1,9 @@
+{% extends '_layouts/cp' %}
+{% set title = 'Purge Varnish Cache'|t %}
+{% set content %}
+	<form method="post" action="" accept-charset="UTF-8">
+		<input type="hidden" name="action" value="purgeVarnishCache/purgeAll">
+		<input type="hidden" name="redirect" value="purgevarnishcache">
+		<input type="button" class="btn submit formsubmit" value="Purge Varnish Cache">
+	</form>
+{% endset %}
